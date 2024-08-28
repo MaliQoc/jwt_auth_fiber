@@ -7,7 +7,6 @@ import (
 	"github.com/joho/godotenv"
 )
 
-// LoadConfig yükler .env dosyasını ve verilen anahtarın değerini döner
 func LoadConfig(key string) string {
 	err := godotenv.Load(".env")
 	if err != nil {
